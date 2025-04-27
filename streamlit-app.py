@@ -6,7 +6,11 @@ import os
 from datetime import datetime, timedelta
 import io
 import base64
-from route_planner import read_excel_data, generate_routes, create_excel_report, print_summary, MAX_WEEKS
+
+# Importar funciones directamente del archivo route_planner.py
+from route_planner import (read_excel_data, generate_routes, 
+                           create_excel_report, print_summary, 
+                           MAX_WEEKS, Task, Operario, RouteDayWeek)import streamlit as st
 
 # Configuración de la página
 st.set_page_config(
